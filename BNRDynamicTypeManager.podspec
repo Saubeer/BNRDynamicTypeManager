@@ -17,6 +17,8 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/bignerdranch/BNRDynamicTypeManager.git", :tag => "0.1.0" }
   s.platform     = :ios, '7.0'
   s.requires_arc = true
+  
+  s.ios.deployment_target = '6.0'
 
   s.subspec 'Core' do |core|
       core.source_files = 'BNRDynamicTypeManager/Core/*.{h,m}'
